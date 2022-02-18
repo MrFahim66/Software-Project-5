@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&family=Mulish:wght@400;500;600&family=Open+Sans:wght@400;700&display=swap');
 
-:root{
+:root {
   --header-height: 3.5rem;
 
   /*Colors:
-  Blue1 : hsl(206, 49.6%, 20.2%)
-  Blue2 : hsl(204, 34%, 38%)
-  Blue3 : hsl(197, 28.2%, 54%)
-  Blue4 : hsl(200, 43%. 78.6%)
+  Blue1 : #1A374D
+  Blue2 : #406882
+  Blue3 : #6998AB
+  Blue4 : #B1D0E0
   */
 
   --first-hue: 206;
@@ -15,13 +15,13 @@
   --lig: 20.2%;
   --second-hue: 190;
 
-  --first-color: hsl(var(--first-color), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-color), var(--sat), 16%);
-  --tile-color: hsl(var(--second-hue), 15%, 95%);
-  --text-color: hsl(var(--second-hue), 8%, 75%);
-  --text-color-light: hsl(var(--second-hue), 4%, 55%);
-  --body-color: hsl(var(--second-hue),48%, 8%);
-  --container-color: hsl(var(--second-hue), 32%, 12%);
+  --first-color: #1A374D;
+  --first-color-alt: #133B5C;
+  --title-color: #AEFEFF;
+  --text-color: #4FBDBA;
+  --text-color-light: white;
+  --body-color: #1A374D;
+  --container-color: #406882;
 
   --body-font: 'Mulish', sans-serif;
   --biggest-font-size: 1.75rem;
@@ -40,9 +40,9 @@
 }
 
 @media screen and (min-width: 968px) {
-  :root{
+  :root {
     --biggest-font-size: 2.5rem;
-    --h1-font-size:2.25rem;
+    --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
@@ -51,5 +51,87 @@
   }
 }
 
+/* Base */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, button, input, textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semibold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reusable CSS Classes */
+.container {
+  max-width: 968px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.section{
+  padding: 4.5rem 0 1rem;
+}
+
+.section_title,
+.section_subtitle{
+  text-align: center;
+}
+
+.section_title{
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin-bottom: 2rem;
+}
+
+.section_subtitle{
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
 
 /*# sourceMappingURL=style.css.map */
