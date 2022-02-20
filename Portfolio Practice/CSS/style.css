@@ -18,9 +18,9 @@
   --first-color: #1A374D;
   --first-color-alt: #133B5C;
   --title-color: #AEFEFF;
-  --text-color: #4FBDBA;
+  --text-color: #03045E;
   --text-color-light: white;
-  --body-color: #1A374D;
+  --body-color: #AEFEFF;
   --container-color: #406882;
 
   --body-font: 'Mulish', sans-serif;
@@ -134,4 +134,53 @@ img {
   color: var(--text-color-light);
 }
 
-/*# sourceMappingURL=style.css.map */
+/* Header & Nav */
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+}
+
+.nav{
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_logo{
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+  transition: .4s;
+}
+
+.nav_logo:hover{
+  color: var(--first-color-alt);
+}
+
+.nav_menu{
+  position: fixed;
+  bottom: 1rem;
+  background-color: #35858B;
+  width: 93%;
+  border-radius: 4rem;
+  padding: .5rem 2.50rem;
+  backdrop-filter: blur(10px);
+}
+
+.nav_list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_link{
+  color: var(--text-color);
+  font-size: 1.25em;
+  padding: .4rem;
+  display: flex;
+  border-radius: 5rem;
+}
