@@ -15,13 +15,14 @@
   --lig: 20.2%;
   --second-hue: 190;
 
-  --first-color: #1A374D;
-  --first-color-alt: #133B5C;
-  --title-color: #AEFEFF;
-  --text-color: #2227a7;
+  --first-color: #ADB5BD;
+  --first-color-alt: #212529;
+  --title-color: #F8F9FA;
+  --text-color: #ADB5BD;
   --text-color-light: white;
-  --body-color: #AEFEFF;
-  --container-color: #406882;
+  --body-color: #495057;
+  --container-color: #495057;
+  --link-color: #03045E;
 
   --body-font: 'Mulish', sans-serif;
   --biggest-font-size: 1.75rem;
@@ -164,7 +165,7 @@ img {
 .nav_menu{
   position: fixed;
   bottom: 1rem;
-  background-color: #35858B;
+  background-color: #343A40;
   width: 93%;
   border-radius: 4rem;
   padding: .5rem 2.50rem;
@@ -188,4 +189,108 @@ img {
 /* Active Link */
 .active-link{
   background: var(--body-color);
+  box-shadow: 0 0 16px #D4ECDD;
 }
+
+/* Changing Background Header */
+
+/* HOME */
+.home_container{
+  position: relative;
+  row-gap: 4.5rem;
+  padding-top: 2rem;
+}
+
+.home_data{
+  text-align: center;
+}
+
+.home_greeting,
+.home_education{
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+
+.home_greeting{
+  display: block;
+  color: var(--title-color);
+  margin-bottom: .25rem;
+}
+
+.home_education{
+  color: var(--text-color);
+  margin-bottom: 2.5rem;
+}
+
+.home_name{
+  font-size: var(--biggest-font-size);
+}
+
+.home_img{
+  width: 650px;
+}
+
+.home_handle{
+  justify-self: center;
+  width: 300px;
+  height: 300px;
+  background: #6C757D;
+  border-radius: 10rem 10rem 2rem 2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.home_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.home_social,
+.home_scroll{
+  position: absolute;
+}
+
+.home_social{
+  bottom: 5rem;
+  left: 0;
+  display: grid;
+  row-gap: .5rem;
+}
+
+.home_social-link{
+  width: max-content;
+  background-color: var(--container-color);
+  color: var(--first-color);
+  border-radius: .25rem;
+  display: flex;
+  font-size: 1rem;
+  transition: .4s;
+}
+
+.home_social-link:hover{
+  background-color: var(--first-color);
+  color: #ffff;
+}
+
+.home_social::after{
+  content: '';
+  width: 32px;
+  height: 2px;
+  background-color: var(--first-color);
+  transform: rotate(90deg) translate(16px, 3px);
+}
+
+/* BUTTONS */
+
+
+/* ABOUT */
+
+
+/* SKILLS */
+
+
+/* SERVICES */
