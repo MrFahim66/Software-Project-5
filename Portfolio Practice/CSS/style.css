@@ -3,18 +3,6 @@
 :root {
   --header-height: 3.5rem;
 
-  /*Colors:
-  Blue1 : #1A374D
-  Blue2 : #406882
-  Blue3 : #6998AB
-  Blue4 : #B1D0E0
-  */
-
-  --first-hue: 206;
-  --sat: 49.6%;
-  --lig: 20.2%;
-  --second-hue: 190;
-
   --first-color: #ADB5BD;
   --first-color-alt: #212529;
   --title-color: #F8F9FA;
@@ -350,6 +338,24 @@ img {
   background-color: var(--container-color);
   border-radius: .75rem;
   padding: .75rem .5rem;
+}
+
+.about_icon{
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: .5rem;
+}
+
+.about_title{
+  font-size: var(--small-font-size);
+}
+
+.about_subtitle{
+  font-size: var(--smaller-font-size);
+}
+
+.about_description{
+  margin-bottom: 2rem;
 }
 
 /* SKILLS */
