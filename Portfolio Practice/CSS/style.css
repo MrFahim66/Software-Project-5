@@ -153,7 +153,7 @@ img {
 .nav_menu{
   position: fixed;
   bottom: 1rem;
-  background-color: #343A40;
+  background-color: #212529;
   width: 93%;
   border-radius: 4rem;
   padding: .5rem 2.50rem;
@@ -364,7 +364,56 @@ img {
 
 /* SKILLS */
 
+.skills_container{
+  row-gap: 2rem;
+  padding-top: 1rem;
+}
 
+.skills_content{
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+}
+
+.skills_title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.skills_box{
+  display: flex;
+  justify-content: center;
+  column-gap: 2.5rem;
+}
+
+.skills_group{
+  display: grid;
+  align-content: flex-start;
+  row-gap: 1rem;
+}
+
+.skills_data{
+  display: flex;
+  column-gap: .5rem;
+}
+
+.skills .bx-badge-checl{
+  font-size: 1rem;
+  color: var(--first-color);
+}
+
+.skills_name{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  line-height: 18px;
+}
+
+.skills_level{
+  font-size: var(--smaller-font-size);
+}
 /* SERVICES */
 
 
