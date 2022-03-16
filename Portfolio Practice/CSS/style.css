@@ -400,7 +400,7 @@ img {
   column-gap: .5rem;
 }
 
-.skills .bx-badge-checl{
+.skills .bx-badge-check{
   font-size: 1rem;
   color: var(--first-color);
 }
