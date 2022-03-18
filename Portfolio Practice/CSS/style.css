@@ -415,6 +415,14 @@ img {
   font-size: var(--smaller-font-size);
 }
 
+.education{
+  padding-bottom: 2rem;
+}
+
+.skills_level{
+  font-size: var(--h3-font-size);
+}
+
 /* SERVICES */
 
 
