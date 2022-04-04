@@ -451,6 +451,10 @@ img {
   transform: translateX(.50rem);
 }
 
+.services_icon{
+  font-size: 1rem;
+  transition: .4s;
+}
 
 
 /* SERVICES  MODEL*/
