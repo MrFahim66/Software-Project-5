@@ -459,5 +459,43 @@ img {
 
 /* SERVICES  MODEL*/
 
+.services_modal{
+  position: fixed;
+  inset: 0;
+  background-color: var(--first-color-alt);
+  padding: 2rem 1rem;
+  display: grid;
+  place-items: center;
+  /* visibility : hidden; opacity : 0;*/
+  transition: .4s;
+  z-index: var(--z-modal);
+}
 
+.services_modal-content{
+  position: relative;
+  background-color: var(--body-color);
+  padding: 4.5rem;
+  border-radius: 1.5rem;
+}
+
+.services_modal-title,
+.services_modal-description{
+  text-align: center;
+}
+
+.services_modal-title{
+  font-size: var(--h3-font-size);
+  color: var(--first-color);
+  margin-bottom: 1rem;
+}
+
+.services_modal-description{
+  font-size: var(--small-font-size);
+  margin-bottom: 2rem;
+}
+
+.services_modal-list{
+  display: grid;
+  row-gap: .75rem;
+}
 /* ACTIVE MODEL */
