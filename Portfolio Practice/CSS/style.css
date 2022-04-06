@@ -466,7 +466,8 @@ img {
   padding: 2rem 1rem;
   display: grid;
   place-items: center;
-  /* visibility : hidden; opacity : 0;*/
+  visibility : hidden; 
+  opacity : 0;
   transition: .4s;
   z-index: var(--z-modal);
 }
@@ -499,4 +500,27 @@ img {
   row-gap: .75rem;
 }
 
+.services_modal-item{
+  display: flex;
+  align-items: flex-start;
+  column-gap: .5rem;
+}
+
+.services_modal-icon{
+  font-size: 1.5rem;
+  color: var(--first-color);
+}
+
+.services_modal-info{
+  font-size: var(--small-font-size);
+}
+
+.services_modal-close{
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
 /* ACTIVE MODEL */
